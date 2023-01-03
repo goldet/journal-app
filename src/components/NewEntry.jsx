@@ -24,7 +24,7 @@ const handleSubmit = (e) => {
 
   return (
     <div className="NewEntry">
-      <h1 className="flex justify-center gap-6 m-10">Add New Entry</h1>
+      <h1 className="flex justify-center gap-6 m-10">Add New Entry ✏️</h1>
       
       <form onSubmit={handleSubmit} > 
       <div className="flex flex-col">
@@ -56,7 +56,7 @@ const handleSubmit = (e) => {
           />
           </div>
         </label>
-        <button  className="border-solid border-2 border-black-500/50 p-1.5 rounded mt-5 mx-32"
+        <button  className="border-solid border-2 border-black-500/50 p-1.5 rounded-full mt-5 mx-32 hover:bg-violet-600"
         type="submit">Submit</button>
         </div>
       </form>

@@ -8,6 +8,7 @@ function App() {
   const [entries, setEntries] = useState([])
 
 
+
   const addEntry = ((newEntry) => {
      setEntries((state) => {
       return [...state, newEntry]
@@ -22,7 +23,7 @@ function App() {
       <button className="border-solid border-2 border-black-500/50 p-1.5 rounded" onClick={() => setIsNewEntryPage(true)}>Add New Entry</button>{" "}
      <button  className="border-solid border-2 border-black-500/50 p-1.5 rounded" onClick={() => setIsNewEntryPage(false)}>View Past Entries</button>
      </div>
-    {isNewEntryPage &&  (<div>  <NewEntry addEntry={addEntry}/> </div>)} {/* onSubmit={handleSubmit} */}
+    {isNewEntryPage &&  (<div>  <NewEntry addEntry={addEntry}/> </div>)} 
     {!isNewEntryPage && (<div><PastEntries entries={entries}/> </div>)}
     </div>
   );
