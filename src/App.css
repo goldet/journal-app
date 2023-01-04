@@ -1,5 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;500&family=Gloria+Hallelujah&family=Montserrat:wght@300;400;500&family=Prompt:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap');
+.scribble {
+    font-family: 'Gloria Hallelujah';
+    font-size: 25px;
+    position: absolute;
+    top: 1.5%;
+}
+
+.appViewContainer {
+    padding: 10px;
+    color: white;
+    font-size: 30px;    
+}
+
+.btn {
+    padding: 3px;
+}
 
 
+
+
+.addNewEntry {
+    font-size: 20px;
+}
+
+
+.noEntries {
+    font-family: 'Gloria Hallelujah';
+    font-size: 20px;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

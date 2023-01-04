@@ -18,12 +18,15 @@ function App() {
 
   return (
     <div className="App">
-
-      <div className="flex justify-center gap-6 mt-5">
-      <button className="border-solid border-2 border-black-500/50 p-1.5 rounded" onClick={() => setIsNewEntryPage(true)}>Add New Entry</button>{" "}
-     <button  className="border-solid border-2 border-black-500/50 p-1.5 rounded" onClick={() => setIsNewEntryPage(false)}>View Past Entries</button>
+      
+      <div className="appViewContainer gap-2 bg-violet-600">
+      <div className="scribble flex justify-start">Scribble</div>
+      <div className="flex justify-end gap-2 mt-1 mr-1">
+      <button className="btn border-solid border-2 border-black-500/50  rounded text-sm hover:bg-white hover:text-black" onClick={() => setIsNewEntryPage(true)}>Add New Entry</button>{" "}
+     <button  className="btn border-solid border-2 border-black-500/50  rounded text-sm hover:bg-white hover:text-black" onClick={() => setIsNewEntryPage(false)}>Past Entries</button>
      </div>
-    {isNewEntryPage &&  (<div>  <NewEntry addEntry={addEntry}/> </div>)} 
+     </div>
+    {isNewEntryPage &&  (<div><NewEntry addEntry={addEntry}/> </div>)} 
     {!isNewEntryPage && (<div><PastEntries entries={entries}/> </div>)}
     </div>
   );
